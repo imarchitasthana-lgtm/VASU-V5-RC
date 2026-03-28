@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: vasu-ai
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python trading_tool.py
+    healthCheckPath: /health
